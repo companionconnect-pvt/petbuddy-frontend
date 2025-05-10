@@ -34,7 +34,7 @@ const dropoffIcon = new L.Icon({
   shadowSize: [41, 41]
 });
 
-const socket = io('http://localhost:5000');
+const socket = io('https://petbuddy-backend-pamb.onrender.com');
 
 const ChangeMapView = ({ center }) => {
   const map = useMap();

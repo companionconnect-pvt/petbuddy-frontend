@@ -13,7 +13,7 @@ const FindBookings = ({ handleAcceptBooking }) => {
       setIsLoading(true);
       try {
         const token = localStorage.getItem('token'); 
-        const res = await axios.get("http://localhost:5000/api/consultation/confirmed-without-driver", {
+        const res = await axios.get("https://petbuddy-backend-pamb.onrender.com/api/consultation/confirmed-without-driver", {
           headers: {
             Authorization: `Bearer ${token}`,
           },

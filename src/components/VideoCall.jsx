@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom";
 
 
 
-const socket = io("http://localhost:5000");
+const socket = io("https://petbuddy-backend-pamb.onrender.com");
 
 export default function VideoCall() {
   const { roomId } = useParams();

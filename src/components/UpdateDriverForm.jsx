@@ -11,7 +11,7 @@ const UpdateDriverForm = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch(`http://localhost:5000/api/driver/update/${driverId}`, {
+      const response = await fetch(`https://petbuddy-backend-pamb.onrender.com/api/driver/update/${driverId}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

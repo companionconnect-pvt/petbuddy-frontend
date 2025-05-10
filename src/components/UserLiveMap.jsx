@@ -16,7 +16,7 @@ L.Icon.Default.mergeOptions({
 });
 
 // Establish socket connection
-const socket = io("http://localhost:5000"); // Change to your backend URL
+const socket = io("https://petbuddy-backend-pamb.onrender.com"); // Change to your backend URL
 
 // Routing component
 const Routing = ({ start, end }) => {
@@ -81,7 +81,7 @@ const UserLiveMap = () => {
     const fetchBookingDetails = async () => {
       try {
         const token = localStorage.getItem('token'); 
-        const res = await axios.get(`http://localhost:5000/api/consultation/${bookingId}`, {
+        const res = await axios.get(`https://petbuddy-backend-pamb.onrender.com/api/consultation/${bookingId}`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },

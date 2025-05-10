@@ -58,7 +58,7 @@ const DriverSignupForm = () => {
     });
 
     try {
-      const res = await fetch('http://localhost:5000/api/driver/signup', {
+      const res = await fetch('https://petbuddy-backend-pamb.onrender.com/api/driver/signup', {
         method: 'POST',
         body: formData,
       });

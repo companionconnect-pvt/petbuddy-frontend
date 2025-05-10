@@ -10,7 +10,7 @@ const DriverLogin = () => {
     e.preventDefault();
     console.log("hello");
     try {
-      const response = await fetch("http://localhost:5000/api/driver/login", {
+      const response = await fetch("https://petbuddy-backend-pamb.onrender.com/api/driver/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
